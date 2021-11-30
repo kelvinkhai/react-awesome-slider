@@ -46,7 +46,7 @@ export default function AutoplayHoc(WrappedComponent) {
       };
     }
 
-    componentWillReceiveProps(newProps) {
+    UNSAFE_componentWillReceiveProps(newProps) {
       this.mergedStyles = mergeStyles(newProps.cssModule);
       this.checkStartStatus(newProps);
     }
